@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #71badc;
+    --gradient-color: linear-gradient(180deg, #00c3ff 0%, #00d2ff 100%);
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background: #1c1f23;
+    display: flex;
+    place-items: center;
+    height: 100vh;
+    font-family: "Space Grotesk", sans-serif;
+  }
+  
+  .container {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  
+  .btn-primary {
+    display: flex;
+    place-items: center;
+    border-radius: 0.75em;
+    padding: 1.75rem 3rem;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    box-shadow: inset 0 0 0 1px black, 0 0 0 2px #3a3d40,
+      0 0 0 4px rgba(0, 0, 0, 0.25), 0 11px 27px -5px rgba(0, 0, 0, 0.53),
+      0 25px 25px -4px rgba(0, 0, 0, 0.35);
+  
+    background-image: radial-gradient(
+        227.71% 180.23% at 90.64% 130.38%,
+        rgb(17, 20, 23) 0%,
+        rgb(55, 59, 63) 100%
+      ),
+      radial-gradient(
+        207.84% 121.69% at -5.69% 111.39%,
+        rgb(17, 20, 23) 0%,
+        rgb(55, 59, 63) 100%
+      ),
+      linear-gradient(
+        206deg,
+        rgba(123, 134, 151, 0.2) 0%,
+        rgba(25, 27, 30, 0.2) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  
+    span {
+      font-size: 1.5rem;
+      background-image: linear-gradient(69deg, #d1d1d1 0%, #828282 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      text-shadow: 0 2px 1px rgba(0, 0, 0, 0.125);
+      transition: all 0.25s ease-in-out;
+    }
+  
+    &:active {
+      transform: translateY(2px);
+      box-shadow: inset 0 0 0 1px black, 0 0 0 2px #3a3d40,
+        0 0 0 4px rgba(0, 0, 0, 0.25), 0 4px 12px -5px rgba(0, 0, 0, 0.53),
+        0 6px 6px -4px rgba(0, 0, 0, 0.35);
+      transition: all 0.25s ease-in-out;
+      span {
+        background-image: linear-gradient(69deg, #0b99f8 0%, #69b3df 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        text-shadow: 0 2px 1px rgba(0, 0, 0, 0.125);
+      }
+    }
+  }
+  
